@@ -4,9 +4,8 @@ This is a plugin for Botble CMS so you have to purchase Botble CMS first to use 
 The series plugins, follow plugin `Organize series`.
 https://wordpress.org/plugins/organize-series/
 
-![alt text](https://github.com/tvad911/botble-series/blob/master/01.jpg?raw=true)
-![alt text](https://github.com/tvad911/botble-series/blob/master/01-a.jpg?raw=true)
-
+![alt text](https://github.com/tvad911/botble-series/blob/master/documents/images/01-a.jpg?raw=true)
+![alt text](https://github.com/tvad911/botble-series/blob/master/documents/images/01-b.jpg?raw=true)
 # Installation
 
 - Rename folder `botble-series-master` to `series`.
@@ -18,11 +17,11 @@ https://wordpress.org/plugins/organize-series/
 # Config
 - Go to Admin Panel -> Theme options:
 + Series, chose order by and sort by.
-![alt text](https://github.com/tvad911/botble-series/blob/master/02.jpg?raw=true)
+![alt text](https://github.com/tvad911/botble-series/blob/master/documents/images/02.jpg?raw=true)
 
 - Post:
 Chose series of post and order position
-![alt text](https://github.com/tvad911/botble-series/blob/master/03.jpg?raw=true)
+![alt text](https://github.com/tvad911/botble-series/blob/master/documents/images/03.jpg?raw=true)
 Please input 'order' to make the list of series, get right result
 
 - Wiget
@@ -30,22 +29,23 @@ Please input 'order' to make the list of series, get right result
 + Front end widget
 Copy folder `/documents/widgets/frontends/series` to `themes\[theme_name]\widget`, edit your style follow your themes.
 Go to Wiget to use and setting for series.
-![alt text](https://github.com/tvad911/botble-series/blob/master/04.jpg?raw=true)
+![alt text](https://github.com/tvad911/botble-series/blob/master/documents/images/04.jpg?raw=true)
 
 - Menu
-![alt text](https://github.com/tvad911/botble-series/blob/master/05.jpg?raw=true)
+![alt text](https://github.com/tvad911/botble-series/blob/master/documents/images/05.jpg?raw=true)
 
 # Series Page
 To custom series page: 
 - Copy from plugins `series\resources\views\themes\series.php` to `themes\[theme_name]\views` to edit style.
 
+![alt text](https://github.com/tvad911/botble-series/blob/master/documents/images/06.jpg?raw=true)
 # Shortcode
 To show series meta, you should use shortcode: [series-meta postId="12"]
 In `views\category.blade.php`, `views\tags.blade.php`
 
 {!! do_shortcode(generate_shortcode('series-meta', ['postId' => $post->id])) !!} before $post->description
 
-![alt text](https://github.com/tvad911/botble-series/blob/master/06.jpg?raw=true)
+![alt text](https://github.com/tvad911/botble-series/blob/master/documents/images/07.jpg?raw=true)
 
 # Contact us
 - Email: facebook.com/anhduongphuong
