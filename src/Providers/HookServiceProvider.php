@@ -13,7 +13,9 @@ use Illuminate\Support\ServiceProvider;
 use MetaBox;
 use Illuminate\Support\Facades\Auth;
 use Botble\Series\Series;
+use Botble\Series\Models\Series as SeriesModel;
 use Theme;
+use Menu;
 
 class HookServiceProvider extends ServiceProvider
 {
@@ -22,6 +24,10 @@ class HookServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if (defined('MENU_ACTION_SIDEBAR_OPTIONS')) {
+            Menu::addMenuOptionModel(SeriesModel::class);
+            add_action(MENU_ACTION_SIDEBAR_OPTIONS, [$this, 'registerMenuOptions'], 20);
+        }
         add_action(BASE_ACTION_META_BOXES, [$this, 'addSeriesBox'], 20, 2);
         add_filter(DASHBOARD_FILTER_ADMIN_LIST, [$this, 'registerDashboardWidgets'], 22, 2);
         add_filter(BASE_FILTER_PUBLIC_SINGLE_DATA, [$this, 'handleSingleView'], 11);
@@ -195,5 +201,16 @@ class HookServiceProvider extends ServiceProvider
                     ]
                 ]
             ]);
+    }
+
+    /**
+     * Register sidebar options in menu
+     * @throws Throwable
+     */
+    public function registerMenuOptions()
+    {
+        if (Auth::user()->hasPermission('series.index')) {
+            Menu::registerMenuOptions(SeriesModel::class, trans('plugins/series::series.menu'));
+        }
     }
 }

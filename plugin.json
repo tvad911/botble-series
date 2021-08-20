@@ -2,8 +2,8 @@
     "name": "Series",
     "namespace": "Botble\\Series\\",
     "provider": "Botble\\Series\\Providers\\SeriesServiceProvider",
-    "author": "N/A",
-    "url": "N/A",
+    "author": "Ánh Dương",
+    "url": "http://anhduong.us",
     "version": "1.0",
     "description": "The description for module series"
 }

@@ -5,6 +5,8 @@ return [
     'create' => 'New series',
     'edit'   => 'Edit series',
 
+    'menu' => 'Series',
+
     'series_box' => 'Series',
     'order' => 'Order',
     'order_placeholder' => 'Order No',
