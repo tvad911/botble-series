@@ -1,0 +1,132 @@
+.series-meta{
+    font-size: 16px !important;
+    background-color: #E5F3FF !important;
+    padding: 10px;
+    margin: 10px 0;
+
+    a{
+        &:link, &:visited {
+            color: #007bb6;
+            text-decoration: none;
+            outline: 0;
+        }
+    }
+}
+
+.series-list {
+    overflow: hidden;
+    background: #C7F5D2;
+    padding: 1em;
+    border: 1px solid #e8e8e8;
+
+    .series-nav-left {
+        float: left;
+    }
+
+    .series-nav-right {
+        float: right;
+    }
+
+    a{
+        color: #337ab7;
+    }
+}
+
+.imgset {
+  float: left;
+  /*overflow: visible;*/
+  border: none;
+  margin-right: 6px;
+}
+
+.series-list-content {
+  font-size: 1.2em;
+  color: #000;
+  text-align: left;
+}
+
+.series-list-box {
+  background: #fff;
+  width: 90%;
+  /*height: 100px;*/
+  padding: 6px;
+  margin: 10px auto 0 auto;
+  border: 1px solid #1E3A96;
+  border-bottom: 2px solid #1E3A96;
+}
+
+.series-list-box {
+  height: auto;
+  /*min-height: 100px;*/
+}
+
+h2.series-title {
+  font-size: 1.2em;
+  color: #1E3A96;
+  text-align: center;
+}
+
+.series-box {
+    float: left;
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+
+    background: #F8F8F8;
+    color: #777;
+    text-align: left;
+    font: .8em Arial, Tahoma, Verdana, Sans-Serif;
+    padding: 6px 6px 12px 6px;
+    border: 1px dotted #1E3A96;
+    border-bottom: 2px solid #1E3A96;
+    min-width: 125px;
+
+    img {
+        margin: 0px 12.5px 0 12.5px;
+    }
+
+    .center{
+        a{
+            display: block;
+            margin-bottom: 20px;
+            margin-top: 0;
+            line-height: 130%;
+            color: #4f5357;
+            font-weight: 700;
+            font-size: 23px;
+        }
+    }
+
+    ul{
+        &.series-list-ul{
+            line-height: 150%;
+            font-size: 16px;
+            letter-spacing: -0.4px;
+            margin: 0 0 25px 40px;
+            list-style-type: none;
+            padding: 0;
+            li{
+                word-wrap: break-word;
+                font-size: 16px;
+                margin-bottom: 10px;
+                &.series-list-li {
+                    // margin: 0;
+                    padding: 0;
+                }
+                a {
+                    color: #3498DB;
+                }
+            }
+        }
+    }
+}
+
+h3.series-title-post-page {
+  font-size: 1.1em;
+  color: #1E3A96;
+  text-align: center;
+}
+
+p.series-description {
+  font-style: italic;
+}

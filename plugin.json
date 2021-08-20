@@ -1,0 +1,9 @@
+{
+    "name": "Series",
+    "namespace": "Botble\\Series\\",
+    "provider": "Botble\\Series\\Providers\\SeriesServiceProvider",
+    "author": "N/A",
+    "url": "N/A",
+    "version": "1.0",
+    "description": "The description for module series"
+}
