@@ -22,6 +22,7 @@ https://wordpress.org/plugins/organize-series/
 - Post:
 Chose series of post and order position
 ![alt text](https://github.com/tvad911/botble-series/blob/master/documents/images/03.jpeg?raw=true)
+
 Please input 'order' to make the list of series, get right result
 
 - Wiget
